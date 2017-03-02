@@ -1,0 +1,30 @@
+    
+    /*编辑简历页面resume样式*/
+   
+    .resume-top{background:#C1E4ED;height:580px;position:relative}
+    .resume-top .auto{position:relative;}
+    .index-header .auto{position:static;}
+    .resume-top img{position:absolute;top:20%;left:8%}
+	.top-title{position:absolute;right:5%;top:45%;width:580px;padding-bottom:80px;}
+	.top-title p{color: #000;font-size:30px;}
+	.top-title p:nth-child(2){padding:30px 0  0 100px;}
+	.top-title b{color: #139ca6;font-size:50px;font-weight:normal;} 
+	.list>li{width:100%}
+	.resumeR{margin:0 auto;width:800px;color:#444}
+	.resumeR li{display:inline-block;float:left;margin-top:30px;position:relative;}
+	.resumeR label:nth-of-type(1){display:inline-block;margin-right:30px;font-size:18px;line-height:35px;vertical-align: middle;width:150px;text-align:right;}
+	.resumeR input,.resumeR select,.resumeR textarea{border: 1px solid #c9c9c9;vertical-align: middle;border-radius:5px;} 
+	.resumeR input,.resumeR textarea{font-size: 21px;width: 638px;padding: 0 10px;height: 41px;line-height: 41px;}
+	.resumeR .laydate-icon{width:145px;}
+	.resumeR li textarea{height:100px;vertical-align:top;}
+    .resumeR select{width:145px;height:35px;line-height:35px;margin-right:15px;font-size:18px;color:#444}
+    .resume-list button{width:217px;height:60px;cursor: pointer;background: #fff;color:#91CC18;border: 1px solid #91CC18;font-size: 24px;
+                        border-radius: 30px;font-weight:500;margin:40px auto 100px;position:relative;left:47%;}
+    .resume-list button:hover{background:#91CC18;color:#fff;}
+    .list>li div{position:relative;}
+	.resume-list .title{font-size:40px;padding:20px 0 0 620px} 
+	.resume-list input{width:160px;height:35px}
+    .resume-list .widthM{width:240px}
+    .resume-list .widthL{width:590px}
+    .laydate_body .laydate_box{min-width:242px}
+    .resumeR label.error{position:absolute;top:45px;left:185px;font-size:18px;color:#F32043;}
