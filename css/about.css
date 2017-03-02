@@ -1,32 +1,178 @@
-.title,.connect dt div{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
-.connect dt div{transition:all .3s linear;-webkit-transition:all .3s linear;-moz-transition:all .3s linear;-ms-transition:all .3s linear;}
-.about{background:url(../img/seiper2.jpg) no-repeat;background-size:100% 100%;} 
-.company{font-size:20px;text-align:center;}
-.company .title{color:#080808;font-size:40px;position:relative;text-align:center;}
-.title img{width:150px;height:150px;position:absolute;top:-15px;left:-15px}
-.intro,.motto,.principle{width:800px;margin:0 auto;position:relative;}
-.intro img{width:300px;height:300px;position:absolute;top:-180px;right:-260px}
-.intro{font-size:20px;line-height:1.8;}
-.intro a{color:#00A6B1}
-.motto{color:#00A6B2}
-.motto,.principle{margin:120px auto}
-.principle{text-align:left;line-height:1.8;}
-.motto img,.principle img{width:350px;height:170px;position:absolute;top:-180px;}
-.motto img{left:-200px;}
-.principle img{right:-200px}
-.motto span{margin:0 10px}
+.title,
+.connect dt div {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
 
-.connect{background:#00A6B2;text-align:center;}
-.connect p,.addr p{color:#fff;font-weight:normal;font-size:50px;padding:20px 0;}
-.connect dl{width:33.3333%;float:left;color:#fff;font-size:30px;line-height:1.5;padding-bottom:80px;}
-.connect dt div{width:190px;height:190px;margin:30px auto;border-radius:50%;border:2px solid #fff;}
-.connect dt div:hover{border:95px solid #fff;}
+.connect dt div {
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+}
 
-.addr{text-align:center;padding-bottom:100px}
-.addr p{color:#00A6B1}
-.addr ul li{font-size:30px;line-height:76px;}
-.addr ul li:last-child{border:1px solid #00A6B1;color:#00A6B1;border-radius:38px;display:inline-block;margin:0 auto;padding:0 120px;margin-top:20px}
-.addr ol li{padding:20px 0;border-bottom:1px solid #ccc;font-size:18px;color:#595757}
-.addr ol li:first-child {font-size:25px;color:#00A6B1;}
-.addr ol li span:nth-child(1),.addr ol li span:nth-child(3){width:20%;display:inline-block;}
-.addr ol li span:nth-child(2){width:60%;display:inline-block;} 
+.about {
+    background: url(../img/seiper2.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.company {
+    font-size: 20px;
+    text-align: center;
+}
+
+.company .title {
+    color: #080808;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.title img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -15px;
+    left: -15px
+}
+
+.intro,
+.motto,
+.principle {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.intro img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -180px;
+    right: -260px
+}
+
+.intro {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.intro a {
+    color: #00A6B1
+}
+
+.motto {
+    color: #00A6B2
+}
+
+.motto,
+.principle {
+    margin: 120px auto
+}
+
+.principle {
+    text-align: left;
+    line-height: 1.8;
+}
+
+.motto img,
+.principle img {
+    width: 350px;
+    height: 170px;
+    position: absolute;
+    top: -180px;
+}
+
+.motto img {
+    left: -200px;
+}
+
+.principle img {
+    right: -200px
+}
+
+.motto span {
+    margin: 0 10px
+}
+
+.connect {
+    background: #00A6B2;
+    text-align: center;
+}
+
+.connect p,
+.addr p {
+    color: #fff;
+    font-weight: normal;
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+.connect dl {
+    width: 33.3333%;
+    float: left;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5;
+    padding-bottom: 80px;
+}
+
+.connect dt div {
+    width: 190px;
+    height: 190px;
+    margin: 30px auto;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.connect dt div:hover {
+    border: 95px solid #fff;
+}
+
+.addr {
+    text-align: center;
+    padding-bottom: 100px
+}
+
+.addr p {
+    color: #00A6B1
+}
+
+.addr ul li {
+    font-size: 30px;
+    line-height: 76px;
+}
+
+.addr ul li:last-child {
+    border: 1px solid #00A6B1;
+    color: #00A6B1;
+    border-radius: 38px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 120px;
+    margin-top: 20px
+}
+
+.addr ol li {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    color: #595757
+}
+
+.addr ol li:first-child {
+    font-size: 25px;
+    color: #00A6B1;
+}
+
+.addr ol li span:nth-child(1),
+.addr ol li span:nth-child(3) {
+    width: 20%;
+    display: inline-block;
+}
+
+.addr ol li span:nth-child(2) {
+    width: 60%;
+    display: inline-block;
+}

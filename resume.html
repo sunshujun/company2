@@ -1,285 +1,296 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>简历编辑</title>
-		<link rel="stylesheet" href="css/common.css" /> 
-		<link rel="stylesheet" href="css/resume.css" />
-		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=7IN3zE1VQTY6XEGACnvqWRdLZjXeEvRs"></script>
-	 </head> 
-	<body>
-		<div class="resume-top setHeight"> 
-			  <!--导航条-->
-			  <div class="line"></div>
-			  <div class="index-header">
-			   	  <div class="auto">
-						   	  <a href="#" id="logo"></a>
-						   	  <ul class="clear">
-						   	  	<li>
-						   	  		<a href="#">首页</a> 
-						   	  	</li>
-						   	  	<li class="twoLevel">
-						   	  		<a href="product.html">产品与解决方案</a> 
-						   	  		<!--产品解决方案二级菜单-->
-								   <div class="product-solu">
-								   		<ol class="clear">
-								   			<li>
-								   				<div>
-								   					<span></span> 
-								   					<span></span>
-								   					<a href="product/con-service.html" class="ps-img1"></a>
-								   				</div>
-								   				<div class="txt">咨询服务</div>
-								   				<a href="product/con-service.html" class="more">了解更多 </a>
-								   			</li>
-								   			<li>
-								   				<div>
-								   					<span></span> 
-								   					<span></span>
-								   					<a href="product/skill-form.html" class="ps-img2"></a>
-								   				</div>
-								   				<div class="txt">技术平台</div>
-								   				<a href="product/skill-form.html" class="more">了解更多 </a>
-								   			</li>
-								   			<li>
-								   				<div>
-								   					<span></span> 
-								   					<span></span>
-								   					<a href="product/product-service.html" class="ps-img3"></a>
-								   				</div>
-								   				<div class="txt">产品服务</div>
-								   				<a href="product/product-service.html" class="more">了解更多 </a>
-								   			</li>
-								   			<li>
-								   				<div>
-								   					<span></span> 
-								   					<span></span>
-								   					<a href="#" class="ps-img4"></a>
-								   				</div>
-								   				<div class="txt">关注我们 </div>
-								   				<a href="#" class="more">了解更多 </a>
-								   			</li>
-								   		</ol>
-								   </div> 
-						   	  	</li>
-						   	  	<li>
-						   	  		<a href="service.html">服务支持</a> 
-						   	  	</li>
-						   	  	<li>
-						   	  		<a href="information.html">平欣资讯</a> 
-						   	  	</li>
-						   	  	<li>
-						   	  		<a href="employ.html">诚聘英才</a> 
-						   	  	</li>
-						   	  	<li>
-						   	  		<a href="about.html">关于平欣</a> 
-						   	  	</li>  
-						   	  </ul>  
-						   </div>  
-			   </div>
-			  <div class="auto">
-			  	 <img src="img/resume1.png" />
-				 <div class="top-title">
-				  	 <p>带着你的<b>智慧</b>加入平欣吧！</p>
-				  	 <p>和我们一起<b>创造未来</b>！</p> 
-				 </div>
-			  </div>
-		</div> 
-		<div class="resume-list">
-			<div class="auto clear">
-			 <p class="title">简历表</p>
-			  <form id="resume" onsubmit="return false">
-				<ul class="list">
-					<li class="clear"> 
-						<ul class="resumeR">
-							<li>
-								<label>姓名</label><input type="text" name="name" class="widthL"/><label class="error">姓名不能为空</label>
-							</li>
-							<li>
-								<label>性别</label>
-								<select name="sex">
-									<option value="">男</option>
-									<option value="">女</option>
-								</select> 
-							</li>
-							<li>
-								<label>出生日期</label>
-								<input type="text" id="birthday" name="birth" class="laydate-icon"/>
-							</li>
-							<li>
-								<label>工作年限</label>
-								<input type="text" name="experience"/>
-							</li>
-							<li>
-								<label>项目经验</label>
-								<textarea rows="3" class="widthL"></textarea>
-							</li>
-							<li>
-								<label>电话</label><input type="text" name="tel" class="widthM"/>
-								<label class="error">电话不能为空</label>
-							</li>
-							<li>
-								<label>电子邮件</label><input type="text" name="email" class="widthL"/>
-							</li>
-						</ul>
-					</li>
-					<li class="clear"> 
-						<ul class="resumeR">
-							<li>
-								<label>应聘岗位</label>
-								<select name="position">
-									<option value="">
-										Java工程师
-									</option>
-									<option value="">
-										Web前端工程师
-									</option>
-									<option value="">
-										人事部助理
-									</option>
-								</select>
-							</li>
-							<li>
-								<label>期望工作地点</label>
-								<select name="place">
-									<option value="">上海</option>
-									<option value="">北京</option>
-								</select>
-							</li>
-							<li>
-								<label>入职时间</label>
-								<select name="time">
-									<option>请选择</option>
-									<option>三天之内</option>
-									<option>一周之内</option>
-									<option>随时</option>
-									<option>不确定</option>
-								</select>
-							</li>
-						</ul>
-					</li>
-					<li class="clear"> 
-						<ul class="resumeR">
-							<li>
-								<label>学校名称</label><input type="text" name="college" class="widthL"/>
-							</li>
-							<li>
-								<label>学历/学位</label><input type="text" name="level"/>
-							</li>
-							<li>
-								<label>起止时间</label>
-								<input type="text" id="start-tec" class="laydate-icon" name="strat">---<input type="text" id="end-tec" class="laydate-icon" class="name">
-							</li>
-							<li>
-								<label>专业名称</label><input type="text" class="widthL" name="major"/>
-							</li> 
-						</ul>
-					</li>
-				</ul> 
-			    <button onclick="sub()">提交简历</button>
-			 </form> 
-			</div>
-		</div>
-		<div class="footer ">
-			<div class="auto clear">
-				<dl>
-					<dt><a href="#">关于我们</a></dt>
-					<dd><a href="#">公司简介</a></dd>
-					<dd><a href="#">公司简介</a></dd>
-					<dd><a href="#">公司简介</a></dd>
-					<dd><a href="#">公司简介</a></dd>
-				</dl>
-				<dl>
-					<dt><a href="#">人才招聘</a></dt>
-					<dd><a href="#">公司简介</a></dd>
-					<dd><a href="#">公司简介</a></dd>
-					<dd><a href="#">公司简介</a></dd>
-					<dd><a href="#">公司简介</a></dd>
-				</dl>
-				<dl>
-					<dt><a href="#">人才招聘</a></dt>
-					<dd><a href="#">公司简介</a></dd>
-					<dd><a href="#">公司简介</a></dd>
-					<dd><a href="#">公司简介</a></dd>
-					<dd><a href="#">公司简介</a></dd>
-				</dl>
-				<dl class="img">
-					<dt>联系我们</dt>
-					<dd>上海市浦东新区张杨路88号滨江大厦911室</dd>
-					<dd>021-50530133</dd>
-					<dd>Connact@levelaprro.com</dd>
-				</dl>
-			</div>
-			<p class="copyrigt">copyright ©2016上海平欣电子科技有限公司 备案号：XXXXXXX</p>
-		</div> 
-        <!--百度地图--> 
-		 <div class="map">
-	    	<div class="close"></div>
-	    	<div id="showMap"></div> 
-	    </div>  
-	    <!--底部联系--> 
-		<div class="float-contect">
-			<div class="tel">
-				<span></span>
-				<div class="slide-tel">
-					021-50530133
-				</div> 
-			</div>
-			<div class="online">
-				<span></span>
-				<div class="slide-online">
-					在线咨询
-				</div> 
-			</div>
-			<div class="backtop">
-				<span></span>
-				<div class="slide-top">
-					回到顶部
-				</div> 
-			</div>
-		</div>
-	    <script type="text/javascript" src="js/jquery-1.12.1.min.js" ></script>
-	    <script type="text/javascript" src="js/common.js" ></script> 
-	    <script type="text/javascript" src="js/laydate/laydate.js" ></script>
-	    <script>
-	    	var bir = {
-	    		elem:"#birthday",
-	    		event:"focus",
-	    		format: 'YYYY/MM/DD'
-	    	}
-			var startTec = {
-				elem: '#start-tec',
-				format: 'YYYY/MM/DD',
-				max: '2099-06-01', //最大日期
-				istime: true,
-				istoday: false,
-				choose: function(datas){
-				endTec.min = datas; //开始日选好后，重置结束日的最小日期
-				endTec.start = datas //将结束日的初始值设定为开始日
-				  }
-			};
-			var endTec = {
-				elem: '#end-tec',
-				format: 'YYYY/MM/DD',
-				max: '2099-06-01', //最大日期
-				istime: true,
-				istoday: false,
-				choose: function(datas){
-    				startTec.max = datas; //结束日选好后，重置开始日的最大日期
-				  }
-			};
-			laydate(bir);
-			laydate(startTec);
-			laydate(endTec);
-			
-			function sub(){
-				alert()
-				var json=$("#resume").serializeArray();
-				var str=$.param(json);
-				console.log(json);
-				console.log(str);
-				return false;
-			}
-	    </script> 
-	</body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>简历编辑</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/resume.css" />
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=7IN3zE1VQTY6XEGACnvqWRdLZjXeEvRs"></script>
+</head>
+
+<body>
+    <div class="resume-top setHeight">
+        <!--导航条-->
+        <div class="line"></div>
+        <div class="index-header">
+            <div class="auto">
+                <a href="index.html" id="logo"></a>
+                <ul class="clear">
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li class="twoLevel">
+                        <a href="product.html">产品与解决方案</a>
+                        <!--产品解决方案二级菜单-->
+                        <div class="product-solu">
+                            <ol class="clear">
+                                <li>
+                                    <div>
+                                        <span></span>
+                                        <span></span>
+                                        <a href="product/con-service.html" class="ps-img1"></a>
+                                    </div>
+                                    <div class="txt">咨询服务</div>
+                                    <a href="product/con-service.html" class="more">了解更多 </a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span></span>
+                                        <span></span>
+                                        <a href="product/skill-form.html" class="ps-img2"></a>
+                                    </div>
+                                    <div class="txt">技术平台</div>
+                                    <a href="product/skill-form.html" class="more">了解更多 </a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span></span>
+                                        <span></span>
+                                        <a href="product/product-service.html" class="ps-img3"></a>
+                                    </div>
+                                    <div class="txt">产品服务</div>
+                                    <a href="product/product-service.html" class="more">了解更多 </a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span></span>
+                                        <span></span>
+                                        <a href="#" class="ps-img4"></a>
+                                    </div>
+                                    <div class="txt">关注我们 </div>
+                                    <a href="#" class="more">了解更多 </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="service.html">服务支持</a>
+                    </li>
+                    <li>
+                        <a href="information.html">平欣资讯</a>
+                    </li>
+                    <li>
+                        <a href="employ.html">诚聘英才</a>
+                    </li>
+                    <li>
+                        <a href="about.html">关于平欣</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="auto">
+            <img src="img/resume1.png" />
+            <div class="top-title">
+                <p>带着你的<b>智慧</b>加入平欣吧！</p>
+                <p>和我们一起<b>创造未来</b>！</p>
+            </div>
+        </div>
+    </div>
+    <div class="resume-list">
+        <div class="auto clear">
+            <p class="title">简历表</p>
+            <form id="resume" onsubmit="return false">
+                <ul class="list">
+                    <li class="clear">
+                        <ul class="resumeR">
+                            <li>
+                                <label>姓名</label>
+                                <input type="text" name="name" class="widthL" />
+                                <label class="error">姓名不能为空</label>
+                            </li>
+                            <li>
+                                <label>性别</label>
+                                <select name="sex">
+                                    <option value="">男</option>
+                                    <option value="">女</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label>出生日期</label>
+                                <input type="text" id="birthday" name="birth" class="laydate-icon" />
+                            </li>
+                            <li>
+                                <label>工作年限</label>
+                                <input type="text" name="experience" />
+                            </li>
+                            <li>
+                                <label>项目经验</label>
+                                <textarea rows="3" class="widthL"></textarea>
+                            </li>
+                            <li>
+                                <label>电话</label>
+                                <input type="text" name="tel" class="widthM" />
+                                <label class="error">电话不能为空</label>
+                            </li>
+                            <li>
+                                <label>电子邮件</label>
+                                <input type="text" name="email" class="widthL" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clear">
+                        <ul class="resumeR">
+                            <li>
+                                <label>应聘岗位</label>
+                                <select name="position">
+                                    <option value="">
+                                        Java工程师
+                                    </option>
+                                    <option value="">
+                                        Web前端工程师
+                                    </option>
+                                    <option value="">
+                                        人事部助理
+                                    </option>
+                                </select>
+                            </li>
+                            <li>
+                                <label>期望工作地点</label>
+                                <select name="place">
+                                    <option value="">上海</option>
+                                    <option value="">北京</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label>入职时间</label>
+                                <select name="time">
+                                    <option>请选择</option>
+                                    <option>三天之内</option>
+                                    <option>一周之内</option>
+                                    <option>随时</option>
+                                    <option>不确定</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clear">
+                        <ul class="resumeR">
+                            <li>
+                                <label>学校名称</label>
+                                <input type="text" name="college" class="widthL" />
+                            </li>
+                            <li>
+                                <label>学历/学位</label>
+                                <input type="text" name="level" />
+                            </li>
+                            <li>
+                                <label>起止时间</label>
+                                <input type="text" id="start-tec" class="laydate-icon" name="strat">---
+                                <input type="text" id="end-tec" class="laydate-icon" class="name">
+                            </li>
+                            <li>
+                                <label>专业名称</label>
+                                <input type="text" class="widthL" name="major" />
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button onclick="sub()">提交简历</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer ">
+        <div class="auto clear">
+            <dl>
+                <dt><a href="#">关于我们</a></dt>
+                <dd><a href="#">公司简介</a></dd>
+                <dd><a href="#">公司简介</a></dd>
+                <dd><a href="#">公司简介</a></dd>
+                <dd><a href="#">公司简介</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">人才招聘</a></dt>
+                <dd><a href="#">公司简介</a></dd>
+                <dd><a href="#">公司简介</a></dd>
+                <dd><a href="#">公司简介</a></dd>
+                <dd><a href="#">公司简介</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">人才招聘</a></dt>
+                <dd><a href="#">公司简介</a></dd>
+                <dd><a href="#">公司简介</a></dd>
+                <dd><a href="#">公司简介</a></dd>
+                <dd><a href="#">公司简介</a></dd>
+            </dl>
+            <dl class="img">
+                <dt>联系我们</dt>
+                <dd>上海市浦东新区张杨路88号滨江大厦911室</dd>
+                <dd>021-50530133</dd>
+                <dd>Connact@levelaprro.com</dd>
+            </dl>
+        </div>
+        <p class="copyrigt">copyright ©2016上海平欣电子科技有限公司 备案号：XXXXXXX</p>
+    </div>
+    <!--百度地图-->
+    <div class="map">
+        <div class="close"></div>
+        <div id="showMap"></div>
+    </div>
+    <!--底部联系-->
+    <div class="float-contect">
+        <div class="tel">
+            <span></span>
+            <div class="slide-tel">
+                021-50530133
+            </div>
+        </div>
+        <div class="online">
+            <span></span>
+            <div class="slide-online">
+                在线咨询
+            </div>
+        </div>
+        <div class="backtop">
+            <span></span>
+            <div class="slide-top">
+                回到顶部
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/laydate/laydate.js"></script>
+    <script>
+    var bir = {
+        elem: "#birthday",
+        event: "focus",
+        format: 'YYYY/MM/DD'
+    }
+    var startTec = {
+        elem: '#start-tec',
+        format: 'YYYY/MM/DD',
+        max: '2099-06-01', //最大日期
+        istime: true,
+        istoday: false,
+        choose: function(datas) {
+            endTec.min = datas; //开始日选好后，重置结束日的最小日期
+            endTec.start = datas //将结束日的初始值设定为开始日
+        }
+    };
+    var endTec = {
+        elem: '#end-tec',
+        format: 'YYYY/MM/DD',
+        max: '2099-06-01', //最大日期
+        istime: true,
+        istoday: false,
+        choose: function(datas) {
+            startTec.max = datas; //结束日选好后，重置开始日的最大日期
+        }
+    };
+    laydate(bir);
+    laydate(startTec);
+    laydate(endTec);
+
+    function sub() {
+        alert()
+        var json = $("#resume").serializeArray();
+        var str = $.param(json);
+        console.log(json);
+        console.log(str);
+        return false;
+    }
+    </script>
+</body>
+
 </html>
